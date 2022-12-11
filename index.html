@@ -33,12 +33,6 @@
         font-weight: 700;
         src: url("assets/font/Helvetica/HelveticaNowDisplay-Bold.ttf");
       }
-      :root {
-        --primary: #008699;
-        --white100: #fff;
-        --black: #222;
-        --gray: #e0dfdc;
-      }
       html,
       body {
         margin: 0;
@@ -48,118 +42,55 @@
         box-sizing: border-box;
         font-family: "Helvetica", "Roboto Serif", "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
       }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-      }
-      .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--gray);
-        height: 100%;
-      }
-      .card {
-        background-color: var(--white100);
-        display: flex;
-        justify-content: center;
-      }
-      .logo-section {
-        width: 45%;
-      }
-      .text-section {
-        width: 55%;
-        height: 100%;
-      }
-      .text-section {
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
-      .logo {
-        height: 100%;
-        margin-bottom: -4px;
-      }
-      h1 {
-        font-size: 1.7rem;
-        font-weight: 600;
-      }
-      h5 {
-        font-size: 1.6rem;
-        font-weight: 400;
-      }
-      .text-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-      }
-      .title {
-        font-size: 1.3rem;
-        font-weight: 700;
-      }
-      p,
-      a {
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin: 0.1rem 0;
-      }
-      address {
-        margin-top: 1.5rem;
-      }
-      .contact-information {
-        transition: all ease 300ms;
-      }
-      .contact-information:hover {
-        color: var(--primary);
-        cursor: pointer;
-      }
-      a {
-        text-decoration: none;
-        color: var(--black);
-      }
-      .gap-0 {
-        gap: 0;
-      }
-      @media screen and (max-width: 680px) {
-        .text-section {
-          width: 70%;
-        }
-        .logo-section {
-          width: 30%;
-        }
-      }
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="card">
-        <div class="text-section">
-          <div class="text-wrapper">
-            <h1>Alireza Ghazaei Ardekani</h1>
-            <h5>CPO</h5>
-          </div>
-          <div class="text-wrapper">
-            <p><span class="title">Factory: </span>No. 589, Ebrahim Complex, Tajbakhsh St., Garmdareh, Alborz-Iran.</p>
-            <p>Postal Code: 3164847941</p>
-          </div>
-          <div class="text-wrapper gap-0">
-            <a href="tel:+982187184" class="contact-information"><span class="title">T: </span> +98 21 871 84</a>
-            <a href="tel:+4917663732730" class="contact-information"><span class="title">C: </span> +49 176 637 32 730</a>
-            <a href="mailto:a.ghazaei@ebrahimco.com" class="contact-information"><span class="title">E: </span> a.ghazaei@ebrahimco.com</a>
-            <a target="_blank" href="https://www.ebrahimco.com/" class="contact-information"><span class="title">W: </span> www.ebrahimco.com</a>
-          </div>
-        </div>
-        <div class="logo-section">
-          <img class="logo" src="./assets/image/ebrahim-logo.svg" alt="Ebrahim Logo" />
-        </div>
-      </div>
-    </div>
+    <table style="box-shadow: 2px 5px 15px 6px rgba(0, 0, 0, 0.81)">
+      <tr>
+        <td style="max-height: 500px; max-width: 500px">
+          <table style="padding: 2.5rem">
+            <tr>
+              <td><h1 style="font-size: 1.7rem; font-weight: 600; margin: 0; font-family: Helvetica">Alireza Ghazaei Ardekani</h1></td>
+            </tr>
+            <tr>
+              <td>
+                <h5 style="font-size: 1.6rem; font-weight: 400; margin-bottom: 3rem; margin-top: 0.2rem; font-family: Helvetica">CPO</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="font-size: 1.3rem; font-weight: 400; margin: 0.1rem 0; font-family: Helvetica"><span style="font-size: 1.3rem; font-weight: 700; font-family: Helvetica">Factory: </span>No. 589, Ebrahim Complex, Tajbakhsh St., Garmdareh, Alborz-Iran.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p style="font-size: 1.3rem; font-weight: 400; margin-bottom: 2rem; margin-top: 0; font-family: Helvetica">Postal Code: 3164847941</p></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="tel:+982187184" style="transition: all ease 300ms; cursor: pointer; color: #222; text-decoration: none; font-size: 1.3rem; font-weight: 400; margin: 0.1rem 0; font-family: Helvetica"><span style="font-size: 1.3rem; font-weight: 700; font-family: Helvetica">T: </span> +98 21 871 84</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="tel:+4917663732730" style="transition: all ease 300ms; cursor: pointer; color: #222; text-decoration: none; font-size: 1.3rem; font-weight: 400; margin: 0.1rem 0; font-family: Helvetica"><span style="font-size: 1.3rem; font-weight: 700; font-family: Helvetica">C: </span> +49 176 637 32 730</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="mailto:a.ghazaei@ebrahimco.com" style="transition: all ease 300ms; cursor: pointer; color: #222; text-decoration: none; font-size: 1.3rem; font-weight: 400; margin: 0.1rem 0; font-family: Helvetica"><span style="font-size: 1.3rem; font-weight: 700; font-family: Helvetica">E: </span> a.ghazaei@ebrahimco.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" href="https://www.ebrahimco.com/" style="transition: all ease 300ms; cursor: pointer; color: #222; text-decoration: none; font-size: 1.3rem; font-weight: 400; margin: 0.1rem 0; font-family: Helvetica"><span style="font-size: 1.3rem; font-weight: 700; font-family: Helvetica">W: </span> www.ebrahimco.com</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td style="width: 50%">
+          <img style="margin-bottom: -4px" src="https://www.ebrahimco.com/ebrahim-logo.svg" alt="Ebrahim Logo" />
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
